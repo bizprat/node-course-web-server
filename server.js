@@ -40,6 +40,12 @@ app.get('/about', (req, res) => {
 	});
 });
 
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		pageTitle: 'Project Page'
+	});
+});
+
 app.get('/bad', (request, response) => {
 	response.send({
 		error: 'Error Handling the request'
